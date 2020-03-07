@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>
+		GISalmon - {% block title %}{% endblock %} 
+	</title>
+	
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="/static/assets/img/salmon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+
+	<!-- CSS Files -->
+
+	<!-- <link rel="stylesheet" href="/static/assets/css/demo.css"> -->
+    <!-- Specific CSS goes HERE -->
+	
+</head>
+<div class="wrapper {% block layout %}{% endblock layout %}">
+	<div class="main-panel">
+		<div class="content">
+
+			{% block content %}{% endblock content %}
+		
+		</div>
+</div>
+</html>
