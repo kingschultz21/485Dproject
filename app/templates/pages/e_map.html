@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5fd0ec3d21904990ac4894153c442316 {
+                #map_bac5ee07e3ed4948bf39e1ce46c019b2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5fd0ec3d21904990ac4894153c442316" ></div>
+            <div class="folium-map" id="map_bac5ee07e3ed4948bf39e1ce46c019b2" ></div>
         
 </body>
 <script>    
     
-            var map_5fd0ec3d21904990ac4894153c442316 = L.map(
-                "map_5fd0ec3d21904990ac4894153c442316",
+            var map_bac5ee07e3ed4948bf39e1ce46c019b2 = L.map(
+                "map_bac5ee07e3ed4948bf39e1ce46c019b2",
                 {
                     center: [53.5, -124.0],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,9 @@
 
         
     
-            var tile_layer_add3c6ebbb344e6da3fae430361f0f3b = L.tileLayer(
-                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
-                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_5fd0ec3d21904990ac4894153c442316);
+            var tile_layer_8d38d983026c4e0189030a04bada5bde = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bac5ee07e3ed4948bf39e1ce46c019b2);
         
 </script>

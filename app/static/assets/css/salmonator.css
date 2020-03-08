@@ -1,0 +1,28 @@
+/* Wrapper has the bg color of left side */
+.wrapper,
+.left {
+  background-color: blue;
+}
+
+/* Right container */
+.right {
+  background-color: pink;
+  position: relative; /* Let it have absolute positioned children  */
+  z-index: 0;
+}
+
+.right .bg {
+  background-color: pink;
+
+  /* Following will make our bg element the same size as its parent
+   and will put it behind it making it look like a background */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+
+  width: 100%; 
+  width: 100vw; 
+
+}
