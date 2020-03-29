@@ -31,7 +31,7 @@ def index(path):
 
 	try:
 		# try to match the pages defined in -> pages/<input file>
-		return render_template( 'pages/'+path )
+		return render_template( 'pages/'+path, iframe = 'e_map.html')
 
 	except:
 		# return 404 error page
