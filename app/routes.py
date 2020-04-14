@@ -8,10 +8,6 @@ Basic routing program using Flask.
 # Python Modules
 import os, logging 
 
-# App Modules
-from app import app
-from app import carto
-
 # Flask Modules
 from flask import render_template
 
