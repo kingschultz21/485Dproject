@@ -11,6 +11,9 @@ import os, logging
 # Flask Modules
 from flask import render_template
 
+# App Modules
+from app import app
+
 # Mapping Modules
 import folium
 import geopandas as gpd
