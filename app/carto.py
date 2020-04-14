@@ -17,18 +17,21 @@ import folium
 
 # --------------------- Initialization Functions ---------------------#
 
-#
-# Initialize a blank map from given parameters
-#
 def init_map(location_start, zoom_start, tiles):
+	'''
+		Initialize a blank map from parameters
+			-> returns: map - folium map object
+	'''
 	map = folium.Map(location=location_start, 
 					 zoom_start=zoom_start, 
 					 tiles=tiles)
-#
-# Initialize a blank map with Google Earth Imagery Basemap
-#
+	return map
+
 def init_google_map(location_start, zoom_start):
-	# Link to Google Imagery service plus attribution
+	'''
+		Initialize a blank map with Google Earth Imagery Basemap
+			-> returns: map - folium map object
+	'''
 	GoogleImagery = 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}'
 	GoogleAttr = 'Google'
 	map = folium.Map(location=location_start, 
@@ -36,11 +39,12 @@ def init_google_map(location_start, zoom_start):
 					 tiles=GoogleImagery,
 					 attr=GoogleAttr)
 	return map
-#
-# Initialize a blank map with ESRI World Imagery Basemap
-#
+
 def init_esri_map(location_start, zoom_start):
-	# Link to Esri World Imagery service plus attribution
+	'''
+		Initialize a blank map with ESRI World Imagery Basemap
+			-> returns: map - folium map object
+	'''
 	EsriImagery = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
 	EsriAttr = "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
 	map = folium.Map(location=location_start, 
@@ -51,10 +55,10 @@ def init_esri_map(location_start, zoom_start):
 
 # --------------------- Output Functions ---------------------#
 
-#
-# Converts a map to html and saves as in the given path location
-#
 def to_html(map, path, fname):
+	'''
+		Converts a map to html and saves in the given path location
+	'''
 	cwd = os.getcwd()
 
 	map.save(fname)

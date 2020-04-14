@@ -35,7 +35,7 @@
 	}
 	
 	.custom-toggle .bar {
-		background-color: rgb(157, 0, 230);
+		background-color: rgba(62, 24, 87, 0.87);
 		display: block;
 		width: 30px;
 		height: 3px;
@@ -92,6 +92,8 @@
 		<div class="pure-u-1 pure-u-md-1-3">
 			<div class="pure-menu pure-menu-horizontal custom-can-transform">
 				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Map</a></li>
+					<li class="pure-menu-item"><a href="time_series.html" class="pure-menu-link">Time Series Data</a></li>
 					<li class="pure-menu-item"><a href="error-404.html" class="pure-menu-link">About</a></li>
 					<li class="pure-menu-item"><a href="https://github.com/kingschultz21/GISalmon" class="pure-menu-link">Project Repository</a></li>
 				</ul>
@@ -162,22 +164,9 @@
 	</style>
 {% endblock stylesheets %}
 
-
-
 {% block content %}
 
-<div class="main">
-
-    <h1>{USER INTERFACE}</h1>
-
-</div>
-
-
-<iframe frameborder='0' noresize='noresize' style='position: absolute; background: transparent; width: 99.75%; height:82%; margin-left: 0.25em; margin-right: 0.25em;' src="{{ iframe }}" frameborder="0"></iframe>
-
-
-
-
+<iframe frameborder='0' noresize='noresize' style='position: absolute; background: transparent; width: 99.75%; height:95%; margin-left: 0.25em; margin-right: 0.25em;' src="{{ iframe }}" frameborder="0"></iframe>
 
 {% endblock content %}
 

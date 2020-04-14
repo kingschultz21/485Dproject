@@ -67,9 +67,42 @@ The app is provided with configuration to be executed in [Docker](https://www.do
 
 <br />
 
+## Other Tools
+
+<br />
+
+### [Mapshaper](https://github.com/mbloch/mapshaper) Polygon Simplification Tool
+---
+
+<br />
+
+1. Install mapshaper: `npm install -g mapshaper`
+2. Simplification Tool: `mapshaper-xl <infile>.shp simplify <x>% -o <outfile>.shp`
+   * note: this will take a while
+
 ## Change Log
 >version 1.0.0
-
+   * web application backend built using Python3 and Flask
+   * folium base map created from ESRI and GoogleEarth Imagery
+>version 1.1.0
+   * basic UI design using PureCSS and custom CSS
+   * better routing and navigation
+>version 1.2.0
+   * extensive data processing
+   * polygon simplification tools
+   * fixing shapefile size problems...
+> TODO:
+   * simply skeena + nass regions
+   * convert to geoJSON?
+   * simplify to 1%?
+   * plot data on folium
+   * time series!
+     * DATA NEEDED:
+       * skeena population csv
+       * nass population csv
+       * skeena fish data (shp's)
+       * nass fish data (shp's)
+  
 <br />
 
 ## Credits & Links

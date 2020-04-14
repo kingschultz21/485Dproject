@@ -1,0 +1,35 @@
+{% extends "layouts/default.html" %}
+
+{% block title %} Home {% endblock title %}
+
+{% block stylesheets %}
+
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+<a href="index.html" class="pure-menu-heading custom-brand">GISalmon HOME</a>
+<h1>Time Series Total Run Size Salmon Population Graphs</h1>
+<body style="background-color:black; color: white;">
+	<video loop autoplay>
+		<source src="static/assets/video/Chinook_ts.mp4" type="video/mp4">
+	</video>
+	<video loop autoplay>
+		<source src="static/assets/video/Coho_ts.mp4" type="video/mp4">
+	</video>
+	<video loop autoplay>
+		<source src="static/assets/video/Pink (Even)_ts.mp4" type="video/mp4">
+	</video>
+	<video loop autoplay>
+		<source src="static/assets/video/Pink (Odd)_ts.mp4" type="video/mp4">
+	</video>
+	<video loop autoplay>
+		<source src="static/assets/video/Lake Sockeye_ts.mp4" type="video/mp4">
+	</video>
+	<video loop autoplay>
+		<source src="static/assets/video/Chum_ts.mp4" type="video/mp4">
+	</video>
+</body>
+
+{% endblock content %}

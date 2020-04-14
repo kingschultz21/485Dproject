@@ -17,21 +17,20 @@ from flask import render_template
 
 # Mapping Modules
 import folium
+import geopandas as gpd
+
+import json
+import requests
 
 
 # App main route + generic routing
 @app.route('/', defaults={'path': 'index.html'})
 @app.route('/<path>')
 def index(path):
-	e_map = carto.init_esri_map(location_start=[53.5, -124], zoom_start=6.25)
-	carto.to_html(e_map, '/app/templates/pages', 'e_map.html')
-
-	g_map = carto.init_google_map(location_start=[53.5, -124], zoom_start=6.25)
-	carto.to_html(g_map, '/app/templates/pages', 'g_map.html')
 
 	try:
 		# try to match the pages defined in -> pages/<input file>
-		return render_template( 'pages/'+path, iframe = 'e_map.html')
+		return render_template( 'pages/'+path, iframe = 'map.html')
 
 	except:
 		# return 404 error page
