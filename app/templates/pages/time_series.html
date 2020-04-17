@@ -8,11 +8,40 @@
 {% endblock stylesheets %}
 
 {% block content %}
+<style>
+	body{
+		background-color: black;
+		color: white;
+		margin-bottom: 0.25em;
+		margin-left: 0.25;
+		margin-right: 0.25;
+		padding: 1em;
+	}
+	/* unvisited link */
+	a:link {
+	  color: rgb(131, 131, 131);
+	}
+	
+	/* visited link */
+	a:visited {
+	  color: rgb(201, 201, 201);
+	}
+	
+	/* mouse over link */
+	a:hover {
+	  color: rgb(173, 0, 130);
+	}
+	
+	/* selected link */
+	a:active {
+	  color: red;
+	}
+	</style>
 
 <a href="index.html" class="pure-menu-heading custom-brand">GISalmon HOME</a>
 <h1>Time Series Total Run Size Salmon Population Graphs</h1>
 <h4>Right Click a Frame for Video Controls.</h4>
-<body style="background-color:black; color: white;">
+<body>
 	<video loop="true" autoplay="autoplay">
 		<source src="static/assets/video/Chinook_ts.mp4" type="video/mp4">
 	</video>
