@@ -1,0 +1,114 @@
+{% extends "layouts/default.html" %}
+
+{% block title %} Home {% endblock title %}
+
+{% block stylesheets %}
+
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+</script>
+<style>
+body{
+	background-color: black;
+	color: white;
+	margin-bottom: 0.25em;
+	margin-left: 0.25;
+	margin-right: 0.25;
+	padding: 1em;
+}
+/* unvisited link */
+a:link {
+  color: rgb(131, 131, 131);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(201, 201, 201);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(173, 0, 130);
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+</style>
+
+<a href="index.html" class="pure-menu-heading custom-brand">GISalmon HOME</a>
+<body>
+	<h1> About: </h1>
+	<h2> Project Description: </h2>
+	GISalmon is an interactive web application used to monitor the health of British Columbia's various salmon populations.
+	GISalmon was created as a final project for CSc 485D: Information Visualization by Connor Schultz, Ben Wilmot and Wyatt Timmermans.
+
+	<br/>
+	<br/>
+
+	The application is built on the <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a> micro web-framework for python3 and deployed using 
+	<a href="https://www.docker.com/?utm_source=google&utm_medium=cpc&utm_campaign=dockerhomepage&utm_content=namer&utm_term=dockerhomepage&utm_budget=growth&gclid=EAIaIQobChMI-s-Vt_Lu6AIVj8BkCh36ogQvEAAYASAAEgJ44_D_BwE">Docker</a> 
+	and <a href="https://www.heroku.com/">Heroku</a>. 
+	The overlays shown in the GISalmon Map were created using the <a href="https://python-visualization.github.io/folium/">Folium</a> package for
+	visualization and <a href="https://geopandas.org/">GeoPandas</a> for data management. The animated line graphs shown in the GISalmon Time Series 
+	were created using <a href="https://matplotlib.org/">matplotlib</a> and <a href="https://pandas.pydata.org/">pandas</a> for python3.
+
+	<h2> Data: </h2>
+	<h3> Map Data: </h3>
+	The data used to create the overlays for the GISalmon Map was obtained from the <a href="https://open.canada.ca/en">Government of Canada Open Data Portal.</a>
+	The sources for each species are listed below.
+
+	<br/>
+	<br/>
+
+	<a href="https://open.canada.ca/data/en/dataset/2f4bd945-f47e-47e3-9108-79f6ee39242c">Chinook Salmon</a><br/>
+	<a href="https://open.canada.ca/data/en/dataset/f86c0867-d38d-4072-bd08-57cbbcbafa46">Chum Salmon</a><br/>
+	<a href="https://open.canada.ca/data/en/dataset/bfeb3ecd-b99a-4d1a-b8c1-87373f31f4bd">Coho Salmon</a><br/>
+	<a href="https://open.canada.ca/data/en/dataset/e4bebec3-0846-4326-a81f-210a92b980b8">Even Year Pink Salmon</a><br/>
+	<a href="https://open.canada.ca/data/en/dataset/d526ae50-97cb-49e7-9315-901b3bfa310c">Odd Year Pink Salmon</a><br/>
+	<a href="https://open.canada.ca/data/en/dataset/39aa4ce0-7185-448a-be87-9b69a87854a4">Lake Tye Sockeye Salmon</a><br/>
+	
+	<h3> Time Series Data: </h3>
+	The data used to create the animated line graphs for the GISalmon Time Series was obtained from the 
+	<a href="https://www.psf.ca/">Pacific Salmon Foundation.</a> The source for the tabular data set is listed below.
+
+	<br/>
+	<br/>
+
+	<a href="https://data.salmonwatersheds.ca/data-library/export.aspx">Historical Salmon Data (PSF)</a><br/>
+
+	<h2> Terminology: </h2>
+	<b>Conservation Unit (CU):</b> The Government of Canada defines a Conservation Unit or CU as a group of wild
+	salmon that is sufficiently isolated from other groups that if it was to be made locally extinct, it would be
+	very unlikely for the group to recover naturally within an acceptable time frame.
+
+	<br/>
+	<br/>
+
+	<b>Wild Salmon Policy (WSP) Status:</b> The Government of Canada defines Wild Salmon Policy Status or WSP Status
+	as an evaluation of the biological status of a CU. The status is defined by a number of metrics which are integrated
+	and expertly reviewed for each CU. A WSP Status of GREEN indicates a healthy status CU, an AMBER status indicates a marginal status CU
+	and a RED status indicates a poor status CU. A WSP Status of DD represents a data-deficient CU and a TBD Status represents a CU under consideration.
+
+	<br/>
+	<br/>
+
+	More information for how WSP Status is defined can be seen at the 
+	<a href="https://www.pac.dfo-mpo.gc.ca/fm-gp/salmon-saumon/wsp-pss/policy-politique/strategy-1-eng.html#strategy1">Fisheries and Oceans Canada</a> webpage.
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	
+	<b>Application Developer:</b> Connor Schultz
+
+
+</body>
+
+
+{% endblock content %}
